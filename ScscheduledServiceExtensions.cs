@@ -1,4 +1,6 @@
-public interface IScheduleConfig<T>
+namespace Web.Api.Services
+{
+   public interface IScheduleConfig<T>
     {
         string CronExpression { get; set; }
         TimeZoneInfo TimeZoneInfo { get; set; }
@@ -28,3 +30,4 @@ public interface IScheduleConfig<T>
             return services;
         }
     }
+}
